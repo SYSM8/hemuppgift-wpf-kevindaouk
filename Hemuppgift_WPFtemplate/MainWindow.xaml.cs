@@ -15,6 +15,7 @@ namespace Hemuppgift_WPFtemplate
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
+            //Skapar en ny instans av fönstret
             GridWindow gridWindow = new GridWindow();
             gridWindow.Show();
         }

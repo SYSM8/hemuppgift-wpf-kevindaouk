@@ -26,6 +26,27 @@ namespace Hemuppgift_WPFtemplate
 
         private void btnApply_Click(object sender, RoutedEventArgs e)
         {
+            if (int.TryParse(txtRow.Text, out int row) && int.TryParse(txtColumn.Text, out int column))
+            {
+                // Kontrollera om rader och kolumner är giltiga inom Gridens storlek
+                if (row >= 0 && row <= 3 && column >= 0 && column <= 3)  
+                {
+                    // Flytta knappen till den angivna raden och kolumnen
+                    Grid.SetRow(btnrowandcolumn, row);
+                    Grid.SetColumn(btnrowandcolumn, column);
+                    btnrowandcolumn.Content = "Row " + row + ", Column " + column;
+                }
+                else
+                {
+                    MessageBox.Show("Row and Column values must be between 0 and 3.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter valid numbers for both Row and Column.");
+            }
+            
+            
 
         }
     }

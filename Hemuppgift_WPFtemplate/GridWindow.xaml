@@ -6,28 +6,30 @@
         xmlns:local="clr-namespace:Hemuppgift_WPFtemplate"
         mc:Ignorable="d"
         Title="GridWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <WrapPanel>
-            <Label Content="Row"/>
-            <TextBox x:Name="txtRow" TextWrapping="Wrap" Width="30"/>
-            
-            <Label Content="Column"/>
-            <TextBox x:Name="txtColumn" TextWrapping="Wrap" Width="30"/>
-            <Button x:Name="btnApply" Content="Apply" Width="40" Click="btnApply_Click"/>
-        </WrapPanel>
-        
-        
-    </Grid>
+    
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="btnrowandcolumn" Grid.Column="0" Grid.Row="0" Background="LightGreen" Content="Row 0, Column 0"/>
+
+            <WrapPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Panel.ZIndex="1">
+                <Label Content="Row"/>
+                <TextBox x:Name="txtRow" TextWrapping="Wrap" Width="30"/>
+
+                <Label Content="Column"/>
+                <TextBox x:Name="txtColumn" TextWrapping="Wrap" Width="30"/>
+                <Button x:Name="btnApply" Content="Apply" Width="40" Click="btnApply_Click"/>
+            </WrapPanel>
+        </Grid>
 </Window>
