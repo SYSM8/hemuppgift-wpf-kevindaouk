@@ -13,22 +13,23 @@ namespace Hemuppgift_WPFtemplate
             InitializeComponent();
         }
 
-        private void btnGrid(object sender, RoutedEventArgs e)
+        private void btn1_Click(object sender, RoutedEventArgs e)
+        {
+            GridWindow gridWindow = new GridWindow();
+            gridWindow.Show();
+        }
+
+        private void btn2_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnStackPanel(object sender, RoutedEventArgs e)
+        private void bnt3_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void bntWrapPanel(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void bntDockPanel(object sender, RoutedEventArgs e)
+        private void bnt4_Click(object sender, RoutedEventArgs e)
         {
 
         }
