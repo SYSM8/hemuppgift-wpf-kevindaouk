@@ -22,7 +22,9 @@ namespace Hemuppgift_WPFtemplate
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-
+            StackPanelWindow stackpanelwindow = new StackPanelWindow();
+            stackpanelwindow.Show();
+            
         }
 
         private void bnt3_Click(object sender, RoutedEventArgs e)

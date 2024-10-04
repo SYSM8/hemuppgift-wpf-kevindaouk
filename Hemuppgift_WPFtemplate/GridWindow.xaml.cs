@@ -26,8 +26,10 @@ namespace Hemuppgift_WPFtemplate
 
         private void btnApply_Click(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(txtRow.Text, out int row) && int.TryParse(txtColumn.Text, out int column))
-            {
+            //Konverterar "string" till int
+            int row = int.Parse(txtRow.Text);
+            int column = int.Parse(txtColumn.Text);
+            
                 // Kontrollera om rader och kolumner är giltiga inom Gridens storlek
                 if (row >= 0 && row <= 3 && column >= 0 && column <= 3)  
                 {
@@ -41,13 +43,10 @@ namespace Hemuppgift_WPFtemplate
                     MessageBox.Show("Row and Column values must be between 0 and 3.");
                 }
             }
-            else
-            {
-                MessageBox.Show("Please enter valid numbers for both Row and Column.");
-            }
+            
             
             
 
         }
     }
-}
+
