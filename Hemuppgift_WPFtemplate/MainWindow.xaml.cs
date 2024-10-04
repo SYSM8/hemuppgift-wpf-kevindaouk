@@ -29,7 +29,8 @@ namespace Hemuppgift_WPFtemplate
 
         private void bnt3_Click(object sender, RoutedEventArgs e)
         {
-
+            WrapPanelWindow wrappanelwindow = new WrapPanelWindow();
+            wrappanelwindow.Show();
         }
 
         private void bnt4_Click(object sender, RoutedEventArgs e)
