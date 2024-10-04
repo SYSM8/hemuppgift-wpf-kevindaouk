@@ -9,6 +9,7 @@
     <Grid>
         
         <WrapPanel>
+            
             <Rectangle Fill="Red" Width="100" Height="100" Margin="5"/>
             <Rectangle Fill="Orange" Width="90" Height="90" Margin="5"/>
             <Rectangle Fill="Yellow" Width="80" Height="80" Margin="5"/>
