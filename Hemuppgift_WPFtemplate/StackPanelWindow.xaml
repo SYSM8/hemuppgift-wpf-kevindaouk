@@ -7,18 +7,23 @@
         mc:Ignorable="d"
         Title="StackPanelWindow" Height="450" Width="800">
     <Grid>
-        
-        <WrapPanel>
-            
-            <Rectangle Fill="Red" Width="100" Height="100" Margin="5"/>
-            <Rectangle Fill="Orange" Width="90" Height="90" Margin="5"/>
-            <Rectangle Fill="Yellow" Width="80" Height="80" Margin="5"/>
-            <Rectangle Fill="LightGreen" Width="70" Height="70" Margin="5"/>
-            <Rectangle Fill="Green" Width="60" Height="60" Margin="5"/>
-            <Rectangle Fill="LightBlue" Width="50" Height="50" Margin="5"/>
-            <Rectangle Fill="Navy" Width="40" Height="40" Margin="5"/>
-            <Rectangle Fill="Black" Width="30" Height="30" Margin="5"/>
-        </WrapPanel>
-        
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="stackPanel" Orientation="Horizontal" VerticalAlignment="Top">
+
+                <Rectangle Fill="Red" Width="100" Height="100" Margin="5"/>
+                <Rectangle Fill="Orange" Width="90" Height="90" Margin="5"/>
+                <Rectangle Fill="Yellow" Width="80" Height="80" Margin="5"/>
+                <Rectangle Fill="LightGreen" Width="70" Height="70" Margin="5"/>
+                <Rectangle Fill="Green" Width="60" Height="60" Margin="5"/>
+                <Rectangle Fill="LightBlue" Width="50" Height="50" Margin="5"/>
+                <Rectangle Fill="Navy" Width="40" Height="40" Margin="5"/>
+                <Rectangle Fill="Black" Width="30" Height="30" Margin="5"/>
+                <RadioButton x:Name="RbtnHorizontal" Content="Horizontal" Click="RbtnHorizontal_Click"/>
+                <RadioButton x:Name="RbtnVertical" Content="Vertical" Click="RbtnVertical_Click"/>
+            </StackPanel>
+        </ScrollViewer>
+
+
     </Grid>
 </Window>

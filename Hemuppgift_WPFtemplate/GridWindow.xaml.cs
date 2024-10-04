@@ -30,7 +30,7 @@ namespace Hemuppgift_WPFtemplate
             int row = int.Parse(txtRow.Text);
             int column = int.Parse(txtColumn.Text);
             
-                // Kontrollera om rader och kolumner är giltiga inom Gridens storlek
+                // Kontrollerar om rader och kolumner är giltiga inom Gridens storlek
                 if (row >= 0 && row <= 3 && column >= 0 && column <= 3)  
                 {
                     // Flytta knappen till den angivna raden och kolumnen

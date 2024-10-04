@@ -23,5 +23,15 @@ namespace Hemuppgift_WPFtemplate
         {
             InitializeComponent();
         }
+
+        private void RbtnHorizontal_Click(object sender, RoutedEventArgs e)
+        {
+            stackPanel.Orientation = Orientation.Horizontal;
+        }
+
+        private void RbtnVertical_Click(object sender, RoutedEventArgs e)
+        {
+            stackPanel.Orientation = Orientation.Vertical;
+        }
     }
 }
